@@ -2,17 +2,24 @@ package com.example.mutasidelapan
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
+import androidx.annotation.StringRes
+import androidx.viewpager2.widget.ViewPager2
+import com.example.mutasidelapan.databinding.ActivityHomeBinding
+import com.google.android.material.tabs.TabLayout
+import com.google.android.material.tabs.TabLayoutMediator
+
 
 class homeActivity : AppCompatActivity() {
+
+
+
+    private lateinit var binding: ActivityHomeBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_home)
+        binding = ActivityHomeBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-    window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
-        supportActionBar?.hide()
-
-    //supportActionBar?.hide()
+    supportActionBar?.hide()
 
     }
 }

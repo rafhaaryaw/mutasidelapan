@@ -4,8 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".fragmentInputData">
+    android:layout_height="match_parent">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/input_data"
@@ -29,12 +28,12 @@
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
             android:layout_marginStart="24dp"
             android:layout_marginTop="10dp"
             android:fontFamily="sans-serif"
             android:text="Nama"
             android:textColor="@color/blackTextView"
+            android:textSize="20sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_data_siswa" />
 
@@ -42,11 +41,10 @@
             android:id="@+id/edt_nama"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/backgroundcorner"
             android:layout_marginStart="24dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="24dp"
-            android:backgroundTint="@color/white"
+            android:background="@drawable/backgroundcorner"
             android:inputType="text"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/textView2"
@@ -72,7 +70,7 @@
             android:layout_marginStart="24dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="24dp"
-            android:backgroundTint="@color/white"
+            android:background="@drawable/backgroundcorner"
             android:inputType="text"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/tv_kelas"
@@ -98,7 +96,7 @@
             android:layout_marginStart="24dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="24dp"
-            android:backgroundTint="@color/white"
+            android:background="@drawable/backgroundcorner"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/tv_nisn"
             app:layout_constraintTop_toBottomOf="@+id/tv_nisn" />
@@ -123,8 +121,9 @@
             android:layout_marginStart="24dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="24dp"
-            android:backgroundTint="@color/white"
+            android:background="@drawable/backgroundcorner"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.958"
             app:layout_constraintStart_toStartOf="@+id/tv_nik"
             app:layout_constraintTop_toBottomOf="@+id/tv_nik" />
 
@@ -146,11 +145,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
-            android:inputType="date"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="24dp"
-            android:backgroundTint="@color/white"
+            android:background="@drawable/backgroundcorner"
+            android:inputType="date"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.6"
             app:layout_constraintStart_toStartOf="@+id/tv_tempat_tanggal_lahir"
             app:layout_constraintTop_toBottomOf="@+id/tv_tempat_tanggal_lahir" />
 
@@ -161,8 +161,8 @@
             android:layout_marginStart="24dp"
             android:layout_marginTop="12dp"
             android:fontFamily="sans-serif"
-            android:textColor="@color/blackTextView"
             android:text="Alamat"
+            android:textColor="@color/blackTextView"
             android:textSize="20sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/edt_tempat_tanggal_lahir" />
@@ -174,7 +174,7 @@
             android:layout_marginStart="24dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="24dp"
-            android:backgroundTint="@color/white"
+            android:background="@drawable/backgroundcorner"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/tv_alamat"
             app:layout_constraintTop_toBottomOf="@+id/tv_alamat" />
@@ -196,12 +196,12 @@
             android:id="@+id/edt_mutasi_dari"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:hint="Dari"
-            android:fontFamily="sans-serif"
-            android:padding="8dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
-            android:backgroundTint="@color/white"
+            android:background="@drawable/backgroundcorner"
+            android:fontFamily="sans-serif"
+            android:hint="Dari"
+            android:padding="8dp"
             app:layout_constraintEnd_toStartOf="@+id/edt_mutasi_ke"
             app:layout_constraintStart_toStartOf="@+id/tv_mutasi"
             app:layout_constraintTop_toBottomOf="@+id/tv_mutasi" />
@@ -210,13 +210,13 @@
             android:id="@+id/edt_mutasi_ke"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:fontFamily="sans-serif"
-            android:hint="Ke"
-            android:padding="8dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="24dp"
-            android:backgroundTint="@color/white"
+            android:background="@drawable/backgroundcorner"
+            android:fontFamily="sans-serif"
+            android:hint="Ke"
+            android:padding="8dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/edt_mutasi_dari"
             app:layout_constraintTop_toBottomOf="@+id/tv_mutasi" />
@@ -224,11 +224,11 @@
         <EditText
             android:id="@+id/edt_dari_kelas"
             android:layout_width="0dp"
-            android:fontFamily="sans-serif"
-            android:hint="Kelas"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:backgroundTint="@color/white"
+            android:background="@drawable/backgroundcorner"
+            android:fontFamily="sans-serif"
+            android:hint="Kelas"
             app:layout_constraintEnd_toEndOf="@+id/edt_mutasi_dari"
             app:layout_constraintStart_toStartOf="@+id/edt_mutasi_dari"
             app:layout_constraintTop_toBottomOf="@+id/edt_mutasi_dari" />
@@ -239,10 +239,10 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="24dp"
+            android:background="@drawable/backgroundcorner"
             android:fontFamily="sans-serif"
-            android:padding="8dp"
             android:hint="Kelas"
-            android:backgroundTint="@color/white"
+            android:padding="8dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/edt_mutasi_ke"
             app:layout_constraintTop_toBottomOf="@+id/edt_mutasi_dari" />
@@ -252,7 +252,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:backgroundTint="@color/white"
+            android:background="@drawable/backgroundcorner"
             android:fontFamily="sans-serif"
             android:hint="Jurusan"
             android:padding="8dp"
@@ -266,10 +266,10 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="24dp"
-            android:backgroundTint="@color/white"
+            android:background="@drawable/backgroundcorner"
             android:fontFamily="sans-serif"
-            android:padding="8dp"
             android:hint="Jurusan"
+            android:padding="8dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/edt_ke_kelas"
             app:layout_constraintTop_toBottomOf="@+id/edt_ke_kelas" />
@@ -294,7 +294,7 @@
             android:layout_marginStart="24dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="24dp"
-            android:backgroundTint="@color/white"
+            android:background="@drawable/backgroundcorner"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/tv_tanggal_mutasi"
             app:layout_constraintTop_toBottomOf="@+id/tv_tanggal_mutasi" />
@@ -313,14 +313,14 @@
 
         <EditText
             android:id="@+id/edt_keterangan_mutasi"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="351dp"
+            android:layout_height="44dp"
             android:layout_marginStart="24dp"
             android:layout_marginTop="8dp"
-            android:layout_marginEnd="24dp"
-            android:backgroundTint="@color/white"
+            android:background="@drawable/backgroundcorner"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="@+id/edt_keterangan_mutasi"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_keterangan_mutasi" />
 
         <TextView
@@ -335,18 +335,205 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/edt_keterangan_mutasi" />
 
-        <ImageView
-            android:id="@+id/imageView"
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_profile_diri"
+            android:layout_width="256dp"
+            android:layout_height="269dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_foto"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/iv_profile_diri"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/up_image" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/tv_data_orang_tua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="12dp"
+            android:text="Data Orang Tua"
+            android:textColor="@color/blackTextView"
+            android:textSize="20sp"
+            android:layout_marginVertical="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/card_profile_diri" />
+
+        <TextView
+            android:id="@+id/tv_nama_ayah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="11dp"
+            android:fontFamily="sans-serif"
+            android:text="Nama Ayah"
+            android:textColor="@color/blackTextView"
+            android:textSize="20sp"
+            android:layout_marginVertical="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_data_orang_tua" />
+
+        <EditText
+            android:id="@+id/edt_nama_ayah"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
-            android:src="@drawable/ic_launcher_background"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/backgroundcorner"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="@id/tv_foto"
-            app:layout_constraintTop_toBottomOf="@id/tv_foto" />
+            app:layout_constraintStart_toStartOf="@+id/tv_nama_ayah"
+            app:layout_constraintTop_toBottomOf="@+id/tv_nama_ayah" />
 
+        <TextView
+            android:id="@+id/tv_alamat_ayah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="11dp"
+            android:fontFamily="sans-serif"
+            android:text="Alamat"
+            android:textColor="@color/blackTextView"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_nama_ayah" />
 
+        <EditText
+            android:id="@+id/edt_alamat_ayah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/backgroundcorner"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/tv_alamat_ayah"
+            app:layout_constraintTop_toBottomOf="@+id/tv_alamat_ayah" />
+
+        <TextView
+            android:id="@+id/tv_pekerjaan_ayah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="11dp"
+            android:fontFamily="sans-serif"
+            android:text="Pekerjaan"
+            android:textColor="@color/blackTextView"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_alamat_ayah" />
+
+        <EditText
+            android:id="@+id/edt_pekerjaan_ayah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/backgroundcorner"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/tv_pekerjaan_ayah"
+            app:layout_constraintTop_toBottomOf="@+id/tv_pekerjaan_ayah" />
+
+        <TextView
+            android:id="@+id/tv_nama_ibu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="11dp"
+            android:fontFamily="sans-serif"
+            android:text="Nama Ibu"
+            android:textColor="@color/blackTextView"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_pekerjaan_ayah" />
+
+        <EditText
+            android:id="@+id/edt_nama_ibu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/backgroundcorner"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/tv_nama_ibu"
+            app:layout_constraintTop_toBottomOf="@+id/tv_nama_ibu" />
+
+        <TextView
+            android:id="@+id/tv_alamat_ibu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="11dp"
+            android:fontFamily="sans-serif"
+            android:text="alamat"
+            android:textColor="@color/blackTextView"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_nama_ibu" />
+
+        <EditText
+            android:id="@+id/edt_alamat_ibu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/backgroundcorner"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/tv_alamat_ibu"
+            app:layout_constraintTop_toBottomOf="@+id/tv_alamat_ibu" />
+
+        <TextView
+            android:id="@+id/tv_pekerjaan_ibu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="11dp"
+            android:fontFamily="sans-serif"
+            android:text="Pekerjaan"
+            android:textColor="@color/blackTextView"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_alamat_ibu" />
+
+        <EditText
+            android:id="@+id/edt_pekerjaan_ibu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/backgroundcorner"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/tv_pekerjaan_ibu"
+            app:layout_constraintTop_toBottomOf="@+id/tv_pekerjaan_ibu" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="28dp"
+            android:layout_marginVertical="18dp"
+            android:text="Submit"
+            android:fontFamily="@font/yrsa"
+            android:textStyle="bold"
+            android:textColor="@color/blackTextView"
+            android:backgroundTint="@color/bluebutton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_pekerjaan_ibu"/>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

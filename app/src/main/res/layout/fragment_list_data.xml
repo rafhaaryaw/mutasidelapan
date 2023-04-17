@@ -37,7 +37,7 @@
                  android:layout_width="wrap_content"
                  android:layout_height="wrap_content"
                  android:layout_marginBottom="8dp"
-                 android:text="Nama "
+                 android:text="@string/nama"
                  android:textSize="24sp"
                  android:fontFamily="@font/yrsa"
                  android:textStyle="bold"/>
@@ -48,7 +48,7 @@
                  android:layout_height="wrap_content"
                  android:layout_marginBottom="8dp"
                  android:fontFamily="@font/yrsa"
-                 android:text="Kelas "
+                 android:text="@string/kelas"
                  android:textSize="24sp"
                  android:textStyle="bold" />
 
@@ -57,7 +57,7 @@
                  android:layout_width="wrap_content"
                  android:layout_height="wrap_content"
                  android:fontFamily="@font/yrsa"
-                 android:text="Jurusan "
+                 android:text="@string/jurusan"
                  android:textSize="24sp"
                  android:textStyle="bold" />
 

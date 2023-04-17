@@ -14,6 +14,14 @@ import com.google.android.material.tabs.TabLayoutMediator
 
 class homeActivity : AppCompatActivity() {
 
+    companion object {
+        @StringRes
+        private val TAB_TITLES = intArrayOf(
+            R.string.tab_inputData_user,
+            R.string.tab_listData_user
+        )
+    }
+
     private lateinit var image: ImageView
 
     private lateinit var binding: ActivityHomeBinding
@@ -22,30 +30,13 @@ class homeActivity : AppCompatActivity() {
         binding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val card1: CardView = findViewById(R.id.card_profile_diri)
-
-        card1.setOnClickListener {
-            image = findViewById(R.id.iv_profile_diri)
-            uploadimage(image)
-        }
-
+        val sectionsPagerAdapter = SectionsPagerAdapter(this)
+        val viewPager: ViewPager2 = findViewById(R.id.view_pager)
+        viewPager.adapter = sectionsPagerAdapter
+        val tabs: TabLayout = findViewById(R.id.tabs)
+        TabLayoutMediator(tabs, viewPager) { tab, position ->
+            tab.text = resources.getString(TAB_TITLES[position])
+        }.attach()
         supportActionBar?.hide()
-
-    }
-
-    private fun uploadimage(image: ImageView?) {
-        val intent = Intent()
-
-        intent.action = Intent.ACTION_GET_CONTENT
-        intent.type = "image/*"
-        startActivityForResult(intent, 1)
-
-    }
-
-    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-        super.onActivityResult(requestCode, resultCode, data)
-        if (requestCode == 1) {
-            image.setImageURI(data?.data)
         }
-    }
 }

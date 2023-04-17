@@ -1,5 +1,10 @@
 <resources>
     <string name="app_name">mutasidelapan</string>
-    <!-- TODO: Remove or change this placeholder text -->
+    <string name="tab_inputData_user">inputData</string>
+    <string name="tab_listData_user">listData</string>
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="nama">Nama</string>
+    <string name="kelas">Kelas</string>
+    <string name="jurusan">Jurusan</string>
 </resources>

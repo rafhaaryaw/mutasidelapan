@@ -34,7 +34,7 @@ class ProfilSiswaFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_profil_siswa, container, false)
+        return inflater.inflate(R.layout.fragment_profil_data_siswa, container, false)
     }
 
     companion object {

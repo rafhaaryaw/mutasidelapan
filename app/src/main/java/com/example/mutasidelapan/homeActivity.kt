@@ -1,11 +1,14 @@
 package com.example.mutasidelapan
 
-import android.content.Intent
+
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
 import androidx.annotation.StringRes
-import androidx.cardview.widget.CardView
+import androidx.appcompat.widget.SearchView
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+
 import androidx.viewpager2.widget.ViewPager2
 import com.example.mutasidelapan.databinding.ActivityHomeBinding
 import com.google.android.material.tabs.TabLayout
@@ -14,38 +17,61 @@ import com.google.android.material.tabs.TabLayoutMediator
 
 class homeActivity : AppCompatActivity() {
 
+    private lateinit var searchView: SearchView
+    private lateinit var rvListData: RecyclerView
+    private var list: ArrayList<ListData> = arrayListOf()
     private lateinit var image: ImageView
-
     private lateinit var binding: ActivityHomeBinding
+
+    companion object {
+        @StringRes
+        private val TAB_TITLES = intArrayOf(
+            R.string.tab_inputData_user,
+            R.string.tab_listData_user
+        )
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val card1: CardView = findViewById(R.id.card_profile_diri)
+        val sectionsPagerAdapter = SectionsPagerAdapter(this)
+        val viewPager: ViewPager2 = findViewById(R.id.view_pager)
+        viewPager.adapter = sectionsPagerAdapter
+        val tabs: TabLayout = findViewById(R.id.tabs)
+        TabLayoutMediator(tabs, viewPager) { tab, position ->
+            tab.text = resources.getString(TAB_TITLES[position])
+        }.attach()
 
-        card1.setOnClickListener {
-            image = findViewById(R.id.iv_profile_diri)
-            uploadimage(image)
-        }
+        //cara agar bisa klik seacrh View
+        searchView = findViewById(R.id.searchView)
+
+        searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
+            override fun onQueryTextSubmit(query: String?): Boolean {
+                return true
+            }
+
+            override fun onQueryTextChange(newText: String?): Boolean {
+                return true
+            }
+
+        })
 
         supportActionBar?.hide()
 
+//        rvListData = findViewById(R.id.ly_listdata)
+//        rvListData.setHasFixedSize(true)
     }
 
-    private fun uploadimage(image: ImageView?) {
-        val intent = Intent()
+    private fun showRecyclerList() {
+        rvListData.layoutManager = LinearLayoutManager(this)
+        val listHeroAdapter = ListUsersAdapter(list)
+        rvListData.adapter = listHeroAdapter
 
-        intent.action = Intent.ACTION_GET_CONTENT
-        intent.type = "image/*"
-        startActivityForResult(intent, 1)
-
-    }
-
-    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-        super.onActivityResult(requestCode, resultCode, data)
-        if (requestCode == 1) {
-            image.setImageURI(data?.data)
-        }
+        listHeroAdapter.setOnItemClickCallback(object : ListUsersAdapter.OnItemClickCallback {
+            override fun onItemClicked(data: ListData) {
+            }
+        })
     }
 }

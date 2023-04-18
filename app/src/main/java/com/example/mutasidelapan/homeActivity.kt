@@ -59,9 +59,6 @@ class homeActivity : AppCompatActivity() {
         })
 
         supportActionBar?.hide()
-
-//        rvListData = findViewById(R.id.ly_listdata)
-//        rvListData.setHasFixedSize(true)
     }
 
     private fun showRecyclerList() {

@@ -1,7 +1,8 @@
-package com.example.mutasidelapan
+package com.example.mutasidelapan.Activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.mutasidelapan.R
 
 class ProfilActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

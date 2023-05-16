@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
 import androidx.viewpager2.widget.ViewPager2
+import com.example.mutasidelapan.databinding.ActivityHomeBinding
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 
@@ -20,7 +21,7 @@ class homeActivity : AppCompatActivity() {
     private lateinit var rvListData: RecyclerView
     private var list: ArrayList<ListData> = arrayListOf()
     private lateinit var image: ImageView
-    //private lateinit var binding: ActivityHomeBinding
+    private lateinit var binding: ActivityHomeBinding
 
     companion object {
         @StringRes
@@ -32,8 +33,8 @@ class homeActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        //binding = ActivityHomeBinding.inflate(layoutInflater)
-        //setContentView(binding.root)
+        binding = ActivityHomeBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         val sectionsPagerAdapter = SectionsPagerAdapter(this)
         val viewPager: ViewPager2 = findViewById(R.id.view_pager)

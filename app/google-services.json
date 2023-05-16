@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "273261358791",
+    "project_id": "mutasidelapan",
+    "storage_bucket": "mutasidelapan.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:273261358791:android:8f4db596a3450a155dd8e2",
+        "android_client_info": {
+          "package_name": "com.example.mutasidelapan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "273261358791-2ioovo392i714mh0tpcnr5h9914tk9vg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCI-XJ8VRVawl0lZ2L08i3M41Wo57isNrY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "273261358791-2ioovo392i714mh0tpcnr5h9914tk9vg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

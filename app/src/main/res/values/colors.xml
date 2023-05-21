@@ -8,10 +8,11 @@
     <color name="black">#FF000000</color>
     <color name="blue">#1731F2</color>
     <color name="blue_light">#428BF6</color>
-    <color name="white">#FFF</color>
+    <color name="white">#FFFFFFE5</color>
     <color name="bluebackground">#5BC0F8</color>
     <color name="blackTextView">#141414</color>
     <color name="bluebutton">#3570F5</color>
     <color name="whitebackground">#F9F9F9</color>
+    <color name="background_login">#555050</color>
 
 </resources>

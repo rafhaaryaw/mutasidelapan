@@ -3,7 +3,9 @@ package com.example.mutasidelapan
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
 import android.widget.TextView
+import com.example.mutasidelapan.Activity.LoginActivity
 import com.example.mutasidelapan.Activity.homeActivity
 
 class splashscreenActivity : AppCompatActivity() {
@@ -22,7 +24,7 @@ class splashscreenActivity : AppCompatActivity() {
 
         textmutasi.animate().setDuration(3000).alpha(1f)
         text8.animate().setStartDelay(500).setDuration(3000).alpha(1f).withEndAction {
-            val moveToHome = Intent(this, homeActivity::class.java)
+            val moveToHome = Intent(this, LoginActivity::class.java)
             startActivity(moveToHome)
             overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
             finish()

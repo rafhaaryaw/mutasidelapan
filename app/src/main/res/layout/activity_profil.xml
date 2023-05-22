@@ -8,238 +8,589 @@
     tools:context=".Activity.ProfilActivity">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imageView2"
         android:layout_width="408dp"
         android:layout_height="114dp"
         android:src="@drawable/wave"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.333"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageButton
-        android:id="@+id/imageButton2"
-        android:layout_width="44dp"
-        android:layout_height="44dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginEnd="352dp"
-        android:background="@android:color/transparent"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView"
-        app:layout_constraintEnd_toEndOf="@+id/imageView"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
-        app:layout_constraintTop_toTopOf="@+id/imageView"
-        app:srcCompat="@drawable/baseline_arrow_back_24" />
-
     <ImageView
-        android:id="@+id/iv_foto_profil"
-        android:layout_width="120dp"
-        android:layout_height="141dp"
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="48dp"
         android:src="@drawable/ic_launcher_background"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="344dp"
-        android:fontFamily="@font/yrsa"
-        android:textColor="@color/black"
-        android:text="Data Siswa"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_profil_siswa" />
-
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="373dp"
-        android:layout_height="241dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:background="@drawable/backgroundcorner"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-    <TextView
-        android:id="@+id/tv_nisn_profil_siswa"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:fontFamily="@font/yrsa"
-        android:text="NISN"
-        android:textColor="@color/black"
-        android:textSize="15sp"
-        app:layout_constraintStart_toStartOf="@+id/editText"
-        app:layout_constraintTop_toTopOf="@+id/editText" />
-
-    <TextView
-        android:id="@+id/tv_profil_siswa"
+        android:id="@+id/input_tv_Nama_Siswa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/yrsa"
-        android:textColor="@color/black"
         android:text="Nama Siswa"
-        android:textSize="17sp"
-        app:layout_constraintEnd_toEndOf="@+id/iv_foto_profil"
-        app:layout_constraintStart_toStartOf="@+id/iv_foto_profil"
-        app:layout_constraintTop_toBottomOf="@+id/iv_foto_profil" />
-
-    <TextView
-        android:id="@+id/tv_nis_profil_siswa"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:text="NIS"
-        android:textColor="@color/black"
-        android:fontFamily="@font/yrsa"
-        android:textSize="15sp"
-        app:layout_constraintStart_toStartOf="@+id/tv_nisn_profil_siswa"
-        app:layout_constraintTop_toBottomOf="@+id/tv_nisn_profil_siswa" />
-
-    <TextView
-        android:id="@+id/tv_nik_profil_siswa"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:text="NIK"
-        android:textColor="@color/black"
-        android:fontFamily="@font/yrsa"
-        android:textSize="15sp"
-        app:layout_constraintStart_toStartOf="@+id/tv_nis_profil_siswa"
-        app:layout_constraintTop_toBottomOf="@+id/tv_nis_profil_siswa" />
-
-    <TextView
-        android:id="@+id/tv_kelas_profil_siswa"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:text="Kelas"
-        android:textColor="@color/black"
-        android:fontFamily="@font/yrsa"
-        android:textSize="15sp"
-        app:layout_constraintStart_toStartOf="@+id/tv_nik_profil_siswa"
-        app:layout_constraintTop_toBottomOf="@+id/tv_nik_profil_siswa" />
-
-    <TextView
-        android:id="@+id/tv_jurusan_profil_siswa"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:text="Jurusan"
-        android:textColor="@color/black"
-        android:fontFamily="@font/yrsa"
-        android:textSize="15sp"
-        app:layout_constraintStart_toStartOf="@+id/tv_kelas_profil_siswa"
-        app:layout_constraintTop_toBottomOf="@+id/tv_kelas_profil_siswa" />
-
-    <TextView
-        android:id="@+id/tv_mutasi_profil_siswa"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:text="Mutasi dari"
-        android:textColor="@color/black"
-        android:fontFamily="@font/yrsa"
-        android:textSize="15sp"
-        app:layout_constraintStart_toStartOf="@+id/tv_jurusan_profil_siswa"
-        app:layout_constraintTop_toBottomOf="@+id/tv_jurusan_profil_siswa" />
-
-    <TextView
-        android:id="@+id/tv_tempat_tanggal_lahir_profil_siswa"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:text="Tempat, tanggal lahir"
-        android:textColor="@color/black"
-        android:fontFamily="@font/yrsa"
-        android:textSize="15sp"
-        app:layout_constraintStart_toStartOf="@+id/tv_mutasi_profil_siswa"
-        app:layout_constraintTop_toBottomOf="@+id/tv_mutasi_profil_siswa" />
-
-    <TextView
-        android:id="@+id/tv_alamat_profil_siswa"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:text="Alamat"
-        android:textColor="@color/black"
-        android:fontFamily="@font/yrsa"
-        android:textSize="15sp"
-        app:layout_constraintStart_toStartOf="@+id/tv_tempat_tanggal_lahir_profil_siswa"
-        app:layout_constraintTop_toBottomOf="@+id/tv_tempat_tanggal_lahir_profil_siswa" />
-
-    <TextView
-        android:id="@+id/tv_data_orang_tua_profil_siswa"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="345dp"
-        android:fontFamily="@font/yrsa"
-        android:text="Data Orang Tua"
-        android:textColor="@color/black"
         android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="46dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView4"
+        app:layout_constraintHorizontal_bias="0.02"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_arrow_back_24" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintTop_toBottomOf="@+id/input_tv_Nama_Siswa"
+        app:layout_constraintVertical_bias="0.335">
 
-    <EditText
-        android:id="@+id/edt_data_orang_tua_profil_siswa"
-        android:layout_width="374dp"
-        android:layout_height="96dp"
-        android:layout_marginTop="8dp"
-        android:background="@drawable/backgroundcorner"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.266"
-        app:layout_constraintStart_toStartOf="@+id/tv_data_orang_tua_profil_siswa"
-        app:layout_constraintTop_toBottomOf="@id/tv_data_orang_tua_profil_siswa" />
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="95dp"
+            android:layout_height="34dp"
+            android:fontFamily="@font/yrsa"
+            android:gravity="center"
+            android:text="Data Siswa"
+            android:textColor="@color/blackTextView"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.05"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
 
-    <TextView
-        android:id="@+id/tv_nama_data_orang_tua_profil_siswa"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:fontFamily="@font/yrsa"
-        android:text="Nama"
-        android:textColor="@color/black"
-        android:textSize="15sp"
-        app:layout_constraintStart_toStartOf="@+id/edt_data_orang_tua_profil_siswa"
-        app:layout_constraintTop_toTopOf="@+id/edt_data_orang_tua_profil_siswa" />
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@color/cardview_light_background"
+            app:cardCornerRadius="8dp">
 
-    <TextView
-        android:id="@+id/tv_alamat_data_orang_tua_profil_siswa"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:text="Alamat"
-        android:textColor="@color/black"
-        android:fontFamily="@font/yrsa"
-        android:textSize="15sp"
-        app:layout_constraintStart_toStartOf="@+id/tv_nama_data_orang_tua_profil_siswa"
-        app:layout_constraintTop_toBottomOf="@+id/tv_nama_data_orang_tua_profil_siswa" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/tv_pekerjaan_data_orang_tua_profil_siswa"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:text="Pekerjaan"
-        android:textColor="@color/black"
-        android:fontFamily="@font/yrsa"
-        android:textSize="15sp"
-        app:layout_constraintStart_toStartOf="@+id/tv_alamat_data_orang_tua_profil_siswa"
-        app:layout_constraintTop_toBottomOf="@+id/tv_alamat_data_orang_tua_profil_siswa" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:id="@+id/input_tv_nisn"
+                        android:layout_width="194dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/yrsa"
+                        android:text="NISN"
+                        android:textColor="@color/blackTextView"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/output_tv_nisn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/yrsa"
+                        android:hint="NISN siswa"
+                        android:textColor="@color/blackTextView"
+                        android:textColorHint="@color/gray"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:id="@+id/input_tv_nis"
+                        android:layout_width="194dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/yrsa"
+                        android:text="NIS"
+                        android:textColor="@color/blackTextView"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/output_tv_nis"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/yrsa"
+                        android:hint="NIS siswa"
+                        android:textColor="@color/blackTextView"
+                        android:textColorHint="@color/gray"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:id="@+id/input_tv_nik"
+                        android:layout_width="194dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/yrsa"
+                        android:text="NIK"
+                        android:textColor="@color/blackTextView"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/output_tv_nik"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/yrsa"
+                        android:hint="NIK siswa"
+                        android:textColor="@color/blackTextView"
+                        android:textColorHint="@color/gray"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:id="@+id/input_tv_kelas"
+                        android:layout_width="194dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/yrsa"
+                        android:text="Kelas"
+                        android:textColor="@color/blackTextView"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/output_tv_kelas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/yrsa"
+                        android:hint="Kelas siswa"
+                        android:textColor="@color/blackTextView"
+                        android:textColorHint="@color/gray"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:id="@+id/input_tv_jurusan"
+                        android:layout_width="194dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/yrsa"
+                        android:text="Jurusan"
+                        android:textColor="@color/blackTextView"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/output_tv_jurusan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/yrsa"
+                        android:hint="Jurusan siswa"
+                        android:textColor="@color/blackTextView"
+                        android:textColorHint="@color/gray"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:id="@+id/input_tv_mutasidari"
+                        android:layout_width="194dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/yrsa"
+                        android:text="Mutasi Dari"
+                        android:textColor="@color/blackTextView"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/output_tv_mutasidari"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/yrsa"
+                        android:hint="Asal sekolah"
+                        android:textColor="@color/blackTextView"
+                        android:textColorHint="@color/gray"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:id="@+id/input_tv_TTL"
+                        android:layout_width="194dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/yrsa"
+                        android:text="Tempat, Tanggal Lahir"
+                        android:textColor="@color/blackTextView"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/output_tv_TTL"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/yrsa"
+                        android:hint="TTL siswa"
+                        android:textColor="@color/blackTextView"
+                        android:textColorHint="@color/gray"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:id="@+id/input_tv_alamat"
+                        android:layout_width="194dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/yrsa"
+                        android:text="Alamat"
+                        android:textColor="@color/blackTextView"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/output_tv_alamat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/yrsa"
+                        android:hint="Alamat siswa"
+                        android:textColor="@color/blackTextView"
+                        android:textColorHint="@color/gray"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/Data_orangtua"
+            android:layout_width="117dp"
+            android:layout_height="34dp"
+            android:fontFamily="@font/yrsa"
+            android:gravity="center"
+            android:text="Data Orang Tua"
+            android:textColor="@color/blackTextView"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.05"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@color/cardview_light_background"
+            app:cardCornerRadius="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/input_tv_Nama_Ayah"
+                        android:layout_width="73dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/yrsa"
+                        android:text="Nama Ayah"
+                        android:textColor="@color/blackTextView"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/output_tv_Nama_Ayah"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/yrsa"
+                        android:hint="Nama Ayah"
+                        android:textColor="@color/blackTextView"
+                        android:textColorHint="@color/gray"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/input_tv_alamat_Ayah"
+                        android:layout_width="83dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/yrsa"
+                        android:text="Alamat"
+                        android:textColor="@color/blackTextView"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/output_tv_alamat_Ayah"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/yrsa"
+                        android:hint="Alamat Ayah"
+                        android:textColor="@color/blackTextView"
+                        android:textColorHint="@color/gray"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/input_tv_pekerjaan_Ayah"
+                        android:layout_width="98dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/yrsa"
+                        android:text="Pekerjaan"
+                        android:textColor="@color/blackTextView"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/output_tv_pekerjaan_Ayah"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/yrsa"
+                        android:hint="Pekerjaan Ayah"
+                        android:textColor="@color/blackTextView"
+                        android:textColorHint="@color/gray"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/input_tv_Nama_Ibu"
+                        android:layout_width="66dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/yrsa"
+                        android:text="Nama Ibu"
+                        android:textColor="@color/blackTextView"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/output_tv_Nama_Ibu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/yrsa"
+                        android:hint="Nama Ibu"
+                        android:textColor="@color/blackTextView"
+                        android:textColorHint="@color/gray"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/input_tv_alamat_Ibu"
+                        android:layout_width="74dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/yrsa"
+                        android:text="Alamat"
+                        android:textColor="@color/blackTextView"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/output_tv_alamat_Ibu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/yrsa"
+                        android:hint="Alamat Ibu"
+                        android:textColor="@color/blackTextView"
+                        android:textColorHint="@color/gray"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/input_tv_Pekerjaan_Ibu"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/yrsa"
+                        android:text="Pekerjaan"
+                        android:textColor="@color/blackTextView"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/output_tv_Pekerjaan_Ibu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/yrsa"
+                        android:hint="Pekerjaan Ibu"
+                        android:textColor="@color/blackTextView"
+                        android:textColorHint="@color/gray"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

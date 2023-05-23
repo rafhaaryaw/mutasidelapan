@@ -6,30 +6,18 @@ import android.os.Bundle
 import com.example.mutasidelapan.DataFragment.InputDataFragment
 import com.example.mutasidelapan.ListDataFragment
 import com.example.mutasidelapan.databinding.ActivityLoginBinding
+import com.google.firebase.auth.FirebaseAuth
 
 class LoginActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityLoginBinding
+    lateinit var Auth : FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityLoginBinding.inflate(layoutInflater)
-        setContentView(binding.root)
 
+
+        Auth = FirebaseAuth.getInstance()
+        
         supportActionBar?.hide()
-
-        val email = binding.emailInput.text.toString()
-
-        binding.btnLogin.setOnClickListener {
-            if (email == "admin@admin.com") {
-                val intent = Intent(this, InputDataFragment::class.java)
-                startActivity(intent)
-                finish()
-            } else {
-                val intent = Intent(this, ListDataFragment::class.java)
-                startActivity(intent)
-                finish()
-            }
-        }
     }
 }

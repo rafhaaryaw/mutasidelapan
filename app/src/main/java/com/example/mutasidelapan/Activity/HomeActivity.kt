@@ -18,7 +18,6 @@ import com.google.android.material.tabs.TabLayoutMediator
 class homeActivity : AppCompatActivity() {
 
     private lateinit var rvMutasi : RecyclerView
-
     companion object {
         @StringRes
         private val TAB_TITLES = intArrayOf(
@@ -40,10 +39,6 @@ class homeActivity : AppCompatActivity() {
             tab.text = resources.getString(TAB_TITLES[position])
         }.attach()
 
-        val dataList = arrayListOf(
-            ListData("Rifki", "XI PPLG 3", "PPLG", R.drawable.up_image)
-        )
-        val adapter = ListUsersAdapter(dataList)
 1
         supportActionBar?.hide()
 

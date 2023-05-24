@@ -3,10 +3,12 @@ package com.example.mutasidelapan.Activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import androidx.annotation.StringRes
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.ViewPager2
+import com.example.mutasidelapan.DataFragment.InputDataFragment
 import com.example.mutasidelapan.ListData
 import com.example.mutasidelapan.ListUsersAdapter
 import com.example.mutasidelapan.R
@@ -15,7 +17,7 @@ import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 
 
-class homeActivity : AppCompatActivity() {
+class HomeActivity : AppCompatActivity() {
 
     private lateinit var rvMutasi : RecyclerView
     companion object {
@@ -39,8 +41,8 @@ class homeActivity : AppCompatActivity() {
             tab.text = resources.getString(TAB_TITLES[position])
         }.attach()
 
-1
         supportActionBar?.hide()
+
 
     }
 }

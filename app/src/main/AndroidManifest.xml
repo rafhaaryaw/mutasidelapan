@@ -20,12 +20,11 @@
             android:name=".Activity.ProfilActivity"
             android:exported="false" />
         <activity
-            android:name=".Activity.homeActivity"
+            android:name=".Activity.HomeActivity"
             android:exported="false" />
         <activity
             android:name=".splashscreenActivity"
-            android:exported="true"
-            android:screenOrientation="portrait">
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

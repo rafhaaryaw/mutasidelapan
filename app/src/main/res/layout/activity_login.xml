@@ -44,6 +44,7 @@
             android:padding="16dp"
             android:background="@drawable/edittextbackground"
             android:singleLine="true"
+            android:fontFamily="@font/inter"
             android:textColor="@color/white"
             android:textSize="16sp" />
 
@@ -56,6 +57,7 @@
             android:inputType="textPassword"
             android:background="@drawable/edittextbackground"
             android:padding="16dp"
+            android:fontFamily="@font/inter"
             android:textColor="@color/white"
             android:textSize="16sp" />
 

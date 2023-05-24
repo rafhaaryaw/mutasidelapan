@@ -5,17 +5,19 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.widget.SearchView
+import androidx.core.view.isVisible
 import com.example.mutasidelapan.R
 import com.example.mutasidelapan.databinding.ActivityLoginBinding
 import com.example.mutasidelapan.databinding.FragmentInputDataBinding
 
 class InputDataFragment : Fragment() {
 
-    lateinit var binding : FragmentInputDataBinding
+    private lateinit var binding: FragmentInputDataBinding
+
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_input_data, container, false)
+        inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+        binding = FragmentInputDataBinding.inflate(inflater, container, false)
+        return binding.root
     }
 }

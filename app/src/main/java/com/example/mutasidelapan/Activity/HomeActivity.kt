@@ -1,16 +1,11 @@
 package com.example.mutasidelapan.Activity
 
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import androidx.annotation.StringRes
-import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.ViewPager2
-import com.example.mutasidelapan.DataFragment.InputDataFragment
-import com.example.mutasidelapan.ListData
-import com.example.mutasidelapan.ListUsersAdapter
 import com.example.mutasidelapan.R
 import com.example.mutasidelapan.SectionsPagerAdapter
 import com.google.android.material.tabs.TabLayout

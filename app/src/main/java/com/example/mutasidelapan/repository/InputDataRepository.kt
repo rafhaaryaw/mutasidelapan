@@ -67,13 +67,7 @@ class InputDataRepository {
                 pekerjaanIbu = pekerjaanIbu
             )
 
-            data.document(idMutasiSiswa).set(insertData)
-        }
-    }
-
-    suspend fun getAllData(): List<InputDataModel> {
-        return withContext(Dispatchers.IO) {
-            return@withContext data.get().await().toObjects(InputDataModel::class.java)
+            data.document(idMutasiSiswa).set(insertData).await()
         }
     }
 }

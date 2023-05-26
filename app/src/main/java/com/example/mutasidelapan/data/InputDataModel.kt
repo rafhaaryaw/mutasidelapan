@@ -16,7 +16,7 @@ data class InputDataModel (
     val mutasiKeJurusan: String = "",
     val tanggalMutasi: String = "",
     val keteranganMutasi: String = "",
-    val fotoSiswaUrl: String,
+    val fotoSiswaUrl: String = "",
     val namaAyah: String = "",
     val alamatAyah: String = "",
     val pekerjaanAyah: String = "",

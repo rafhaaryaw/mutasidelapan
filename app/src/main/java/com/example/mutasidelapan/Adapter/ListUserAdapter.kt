@@ -1,20 +1,17 @@
 package com.example.mutasidelapan
 
-import android.app.Activity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.AdapterView.OnItemClickListener
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
-import com.example.mutasidelapan.databinding.ItemUserBinding
-import kotlinx.coroutines.NonDisposableHandle.parent
+import com.example.mutasidelapan.data.InputDataModel
 
 
-class ListUsersAdapter(private val listUser : ArrayList<ListData>) : RecyclerView.Adapter<ListUsersAdapter.ListViewHolder>() {
+class ListUsersAdapter(private val listUser : List<InputDataModel>) : RecyclerView.Adapter<ListUsersAdapter.ListViewHolder>() {
     private lateinit var onItemClickCallback: OnItemClickCallback
 
     fun setOnItemClickCallback(onItemClickCallback: OnItemClickCallback) {
@@ -40,16 +37,17 @@ class ListUsersAdapter(private val listUser : ArrayList<ListData>) : RecyclerVie
     override fun onBindViewHolder(holder: ListViewHolder, position: Int) {
         val user = listUser[position]
         Glide.with(holder.itemView.context)
-            .load(user.photo)
+            .load(user.fotoSiswaUrl)
             .apply(RequestOptions().override(55, 55))
             .into(holder.ivPhotoSiswa)
         holder.tvNamaSiswa.text = user.nama
         holder.tvKelasSiswa.text = user.kelas
-        holder.tvJurusanSiswa.text = user.jurusan
+        holder.tvJurusanSiswa.text = user.mutasiKeJurusan
+
 
         holder.itemView.setOnClickListener { onItemClickCallback.onItemClicked(listUser[holder.adapterPosition]) }
     }
     interface OnItemClickCallback {
-        fun onItemClicked(data: ListData)
+        fun onItemClicked(data: InputDataModel )
     }
 }
